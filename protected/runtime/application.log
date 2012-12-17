@@ -248,3 +248,26 @@ REQUEST_URI=/develop/yii/learntrack/
 in /home/dengwei/var/www/develop/yii/learntrack/protected/views/layouts/main.php (51)
 in /home/dengwei/var/www/develop/yii/learntrack/protected/views/layouts/column1.php (6)
 in /home/dengwei/var/www/develop/yii/learntrack/protected/controllers/SiteController.php (32)
+2012/12/17 14:50:37 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/dengwei/var/www/tours/yii/learntrack/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/dengwei/var/www/tours/yii/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/home/dengwei/v...')
+#1 /home/dengwei/var/www/tours/yii/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /home/dengwei/var/www/tours/yii/framework/web/CClientScript.php(463): CAssetManager->publish('/home/dengwei/v...')
+#3 /home/dengwei/var/www/tours/yii/framework/web/CClientScript.php(500): CClientScript->getCoreScriptUrl()
+#4 /home/dengwei/var/www/tours/yii/framework/web/CClientScript.php(316): CClientScript->getPackageBaseUrl('jquery')
+#5 /home/dengwei/var/www/tours/yii/framework/web/CClientScript.php(209): CClientScript->renderCoreScripts()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#9 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#14 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php?r=site/login
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php?r=site/index
+---
