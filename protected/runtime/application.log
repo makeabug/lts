@@ -271,3 +271,37 @@ Stack trace:
 REQUEST_URI=/tours/yii/learntrack/index.php?r=site/login
 HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php?r=site/index
 ---
+2012/12/18 10:55:38 [error] [exception.CException] exception 'CException' with message 'Property "Post.author_id" is not defined.' in /home/dengwei/var/www/tours/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('author_id')
+#1 /home/dengwei/var/www/tours/yii/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('author_id')
+#2 /home/dengwei/var/www/tours/yii/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(Post), 'author_id')
+#3 /home/dengwei/var/www/tours/yii/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(Post), 'author_id', Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(Post), 'author_id', Array)
+#5 /home/dengwei/var/www/tours/yii/learntrack/protected/views/post/_form.php(32): CActiveForm->textField(Object(Post), 'author_id')
+#6 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(127): require('/home/dengwei/v...')
+#7 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/dengwei/v...', Array, true)
+#8 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/dengwei/v...', Array, true)
+#9 /home/dengwei/var/www/tours/yii/learntrack/protected/views/post/create.php(18): CController->renderPartial('_form', Array)
+#10 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(127): require('/home/dengwei/v...')
+#11 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/dengwei/v...', Array, true)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/dengwei/v...', Array, true)
+#13 /home/dengwei/var/www/tours/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/PostController.php(79): CController->render('create', Array)
+#15 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): PostController->actionCreate()
+#16 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#25 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('post/create')
+#26 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php?r=post/create
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php?r=post
+---

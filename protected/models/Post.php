@@ -11,7 +11,7 @@
  * @property string $created_at
  * @property string $updated_at
  */
-class Post extends CActiveRecord
+class Post extends LearnTrackActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
@@ -40,12 +40,11 @@ class Post extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, content', 'required'),
-			array('author_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>255),
-			array('created_at, updated_at', 'safe'),
+			//array('created_at, updated_at', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, content, author_id, created_at, updated_at', 'safe', 'on'=>'search'),
+			array('id, title, content, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
