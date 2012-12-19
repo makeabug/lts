@@ -89,4 +89,5 @@ return array(
 	),
 	
 	'theme' => 'basic',
+	'homeUrl'=> Yii::app()->request->baseUrl,
 );
