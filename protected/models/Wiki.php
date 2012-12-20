@@ -122,4 +122,9 @@ class Wiki extends LearnTrackActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public function formatContent()
+	{
+		return nl2br($this->content);
+	}
 }
