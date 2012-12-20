@@ -21,6 +21,8 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 	
+	public $contentTitle = '';
+	
 	public function beforeAction($action)
 	{
 	    $controllerName = $this->id; 

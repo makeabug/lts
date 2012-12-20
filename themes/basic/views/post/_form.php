@@ -1,4 +1,4 @@
-<div class="block_content form">
+<div class="form">
     <?php $form=$this->beginWidget('CActiveForm'); ?>
     <p class="row">
         <?php echo $form->labelEx($model,'Title:'); ?> <br>

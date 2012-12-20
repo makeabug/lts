@@ -1,26 +1,51 @@
 <?php
 
 /**
- * This is the model class for table "tbl_posts".
+ * This is the model class for table "tbl_wikis".
  *
- * The followings are the available columns in table 'tbl_posts':
+ * The followings are the available columns in table 'tbl_wikis':
  * @property string $id
  * @property string $title
  * @property string $content
- * @property integer $author_id
- * @property string $created_at
- * @property string $updated_at
+ * @property string $create_time
+ * @property integer $create_user_id
+ * @property string $update_time
+ * @property integer $update_user_id
  */
-class Post extends LearnTrackActiveRecord
+class Wiki extends LearnTrackActiveRecord
 {
+    const HOMEPAGE_TITLE = 'home';
+    
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Post the static model class
+	 * @return Wiki the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	/**
+	 * Init wiki homepage
+	 *
+	 * @return Wiki
+	 */
+	public static function initHomepage()
+	{
+	    $homepage = Wiki::model()->find('title=:title', array(':title'=>self::HOMEPAGE_TITLE));
+	    if (null == $homepage)
+	    {
+	        $homepage = new Wiki();
+	        $homepage->setAttributes(array(
+	           'title' => self::HOMEPAGE_TITLE ,
+	           'content' => 'Hello, Wiki!',
+	        ));
+	        if (!$homepage->save())
+	           throw new CException('Cannot init wiki homepage.');
+	    }
+	    
+	    return $homepage;
 	}
 
 	/**
@@ -28,7 +53,7 @@ class Post extends LearnTrackActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_posts';
+		return 'tbl_wikis';
 	}
 
 	/**
@@ -41,7 +66,6 @@ class Post extends LearnTrackActiveRecord
 		return array(
 			array('title, content', 'required'),
 			array('title', 'length', 'max'=>255),
-			//array('created_at, updated_at', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, title, content, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
@@ -68,9 +92,10 @@ class Post extends LearnTrackActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'content' => 'Content',
-			'author_id' => 'Author',
-			'created_at' => 'Created At',
-			'updated_at' => 'Updated At',
+			'create_time' => 'Create Time',
+			'create_user_id' => 'Create User',
+			'update_time' => 'Update Time',
+			'update_user_id' => 'Update User',
 		);
 	}
 
@@ -88,21 +113,13 @@ class Post extends LearnTrackActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('author_id',$this->author_id);
-		$criteria->compare('created_at',$this->created_at,true);
-		$criteria->compare('updated_at',$this->updated_at,true);
+		$criteria->compare('create_time',$this->create_time,true);
+		$criteria->compare('create_user_id',$this->create_user_id);
+		$criteria->compare('update_time',$this->update_time,true);
+		$criteria->compare('update_user_id',$this->update_user_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}
-	
-	public function getUser()
-	{
-        $user = User::model()->findByPk($this->create_user_id);
-	    if (null === $user)
-	       throw new CException('User Can not found.');
-
-	    return $user;
 	}
 }

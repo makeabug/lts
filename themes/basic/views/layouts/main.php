@@ -14,12 +14,13 @@
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=7" /><![endif]-->
 	<!--[if lt IE 8]><style type="text/css" media="all">@import url("css/ie.css");</style><![endif]-->
 	<!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jquery.js"></script>
 </head>
 
 <body>
 	<div id="hld">
-		<div class="wrapper">		<!-- wrapper begins -->	
+		<div class="wrapper">		
+		<!-- wrapper begins -->	
 			<div id="header">
 				<div class="hdrl"></div>
 				<div class="hdrr"></div>
@@ -29,6 +30,8 @@
 				    'items' => array(
 				        array('label' => 'Dashboard', 'url'=>array('/site/index')),
 				        array('label' => 'Blog', 'url'=>array('/post')),
+				        array('label' => 'Wiki', 'url'=>array('/wiki')),
+				        array('label' => 'Notebook', 'url'=>array('/notebook')),
 				    ),
 				));?>
 						
@@ -36,6 +39,14 @@
 			</div>		
 			<!-- #header ends -->
 			
+			<!-- breadcrumbs -->
+			<?php if (isset($this->breadcrumbs)):?>
+                <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                    'links' => $this->breadcrumbs,
+                ))?>
+            <?php endif; ?>
+            <!-- breadcrumbs -->
+
 			<?php echo $content;?>	
 
 			<div id="footer">

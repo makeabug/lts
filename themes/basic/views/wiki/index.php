@@ -1,11 +1,11 @@
 <?php 
 $this->breadcrumbs = array(
-    'Posts',
+    'Wikis',
 );
 
-$this->contentTitle = 'List Post';
+$this->contentTitle = 'List wiki';
 $this->menu = array(
-	array('label'=>'Create page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+	array('label'=>'Create wiki', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
 );
 ?>
 	

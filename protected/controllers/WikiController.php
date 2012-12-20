@@ -1,14 +1,12 @@
 <?php
 
-class PostController extends Controller
+class WikiController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/block';
-	
-	public $contentTitle = '';
 
 	/**
 	 * @return array action filters
@@ -30,17 +28,17 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'show'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'delete'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
-			/*array('allow', // allow admin user to perform 'admin' and 'delete' actions
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
-			),*/
+			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
@@ -57,6 +55,13 @@ class PostController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+	
+	public function actionShow($title)
+	{
+	    $this->render('show', array(
+	       'model'=>$this->loadModelByTitle($title),
+	    ));
+	}
 
 	/**
 	 * Creates a new model.
@@ -64,14 +69,14 @@ class PostController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Post;
+		$model=new Wiki;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Wiki']))
 		{
-			$model->attributes=$_POST['Post'];
+			$model->attributes=$_POST['Wiki'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -93,9 +98,9 @@ class PostController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Wiki']))
 		{
-			$model->attributes=$_POST['Post'];
+			$model->attributes=$_POST['Wiki'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -112,7 +117,6 @@ class PostController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-	    var_dump($id);exit;
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -125,7 +129,8 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+	    $homepage = Wiki::initHomepage();
+		$dataProvider=new CActiveDataProvider('Wiki');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -136,10 +141,10 @@ class PostController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Post('search');
+		$model=new Wiki('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Post']))
-			$model->attributes=$_GET['Post'];
+		if(isset($_GET['Wiki']))
+			$model->attributes=$_GET['Wiki'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -153,9 +158,23 @@ class PostController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Post::model()->findByPk($id);
+		$model=Wiki::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+	
+	/**
+	 * Enter description here...
+	 *
+	 * @param String $title
+	 * @return Wiki
+	 */
+	public function loadModelByTitle($title)
+	{
+	    $model = Wiki::model()->find('title=:title', array(':title'=>$title));
+	    if ($model === null)
+	       throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
 
@@ -165,10 +184,11 @@ class PostController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='post-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='wiki-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
+	
 }
