@@ -78,7 +78,7 @@ class WikiController extends Controller
 		{
 			$model->attributes=$_POST['Wiki'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect($this->createUrl('show', array('title'=>$model->title)));
 		}
 
 		$this->render('create',array(
@@ -102,7 +102,7 @@ class WikiController extends Controller
 		{
 			$model->attributes=$_POST['Wiki'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect($this->createUrl('show', array('title'=>$model->title)));
 		}
 
 		$this->render('update',array(

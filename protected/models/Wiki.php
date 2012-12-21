@@ -1,4 +1,5 @@
 <?php
+Yii::import('application.extensions.wikiext.wikiext');
 
 /**
  * This is the model class for table "tbl_wikis".
@@ -123,8 +124,9 @@ class Wiki extends LearnTrackActiveRecord
 		));
 	}
 	
-	public function formatContent()
+	public function parseContent()
 	{
-		return nl2br($this->content);
+	    $wiki=new wikiext();
+		return $wiki->parse($this->content);
 	}
 }
