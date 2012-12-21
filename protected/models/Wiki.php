@@ -126,7 +126,10 @@ class Wiki extends LearnTrackActiveRecord
 	
 	public function parseContent()
 	{
-	    $wiki=new wikiext();
+	    $options = array(
+	       'link_format' => Yii::app()->createUrl('wiki/show', array('title'=>'%s')),
+	    );
+	    $wiki=new wikiext($options);
 		return $wiki->parse($this->content);
 	}
 }

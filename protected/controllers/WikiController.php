@@ -28,7 +28,7 @@ class WikiController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'show'),
+				'actions'=>array('index','view', 'show', 'list'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -130,7 +130,19 @@ class WikiController extends Controller
 	public function actionIndex()
 	{
 	    $homepage = Wiki::initHomepage();
-		$dataProvider=new CActiveDataProvider('Wiki');
+	    $this->render('show', array(
+	       'model' => $homepage,
+	    ));
+    
+		/*$dataProvider=new CActiveDataProvider('Wiki');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));*/
+	}
+	
+	public function actionList()
+	{
+	    $dataProvider=new CActiveDataProvider('Wiki');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

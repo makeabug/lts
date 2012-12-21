@@ -3,12 +3,25 @@ $this->breadcrumbs = array(
     'Wiki' => array('index'),
     $model->title,
 );
+if ($model->title == Wiki::HOMEPAGE_TITLE )
+{
+    $this->menu = array(
+        array('label'=>'Create Page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+        array('label'=>'All Pages', 'url'=>array('list')),
+    );
+} else {
+    $this->menu = array(
+        array('label'=>'Create Page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+        array('label'=>'Home', 'url'=>Yii::app()->createUrl('wiki/home')),
+        array('label'=>'All Pages', 'url'=>array('list')),
+    );
+}
 $this->contentTitle = $model->title;
+$this->pageTitle = 'Track - Wiki - ' . $model->title;
 ?>
-
-<?php
-    echo $model->parseContent();
-?>
+<div class="wikiContent">
+<?php echo $model->parseContent();?>
+</div>
 
 <?php $form=$this->beginWidget('CActiveForm', array(
     'id' => 'deleteWiki',

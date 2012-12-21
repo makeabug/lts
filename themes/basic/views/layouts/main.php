@@ -29,7 +29,7 @@
 				    'id' => 'nav',
 				    'items' => array(
 				        array('label' => 'Dashboard', 'url'=>array('/site/index')),
-				        array('label' => 'Blog', 'url'=>array('/post')),
+				        //array('label' => 'Blog', 'url'=>array('/post')),
 				        array('label' => 'Wiki', 'url'=>array('/wiki')),
 				        array('label' => 'Notebook', 'url'=>array('/notebook')),
 				    ),

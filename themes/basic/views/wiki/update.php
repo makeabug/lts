@@ -5,10 +5,19 @@ $this->breadcrumbs = array(
     'Edit Page',
 );
 $this->contentTitle = 'Edit Page';
-$this->menu = array(
-    array('label'=>'List Page', 'url'=>array('index'), 'itemOptions'=>array('class'=>'nobg')),
-    array('label'=>'Delete Page', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-);
+if ($model->title == Wiki::HOMEPAGE_TITLE )
+{
+    $this->menu = array(
+        array('label'=>'Create Page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+        array('label'=>'All Pages', 'url'=>array('list')),
+    );
+} else {
+    $this->menu = array(
+        array('label'=>'Create Page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+        array('label'=>'Home', 'url'=>Yii::app()->createUrl('wiki/home')),
+        array('label'=>'All Pages', 'url'=>array('list')),
+    );
+}
 ?>
 
 <?php 

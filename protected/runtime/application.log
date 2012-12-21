@@ -3449,3 +3449,448 @@ Stack trace:
 REQUEST_URI=/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
 HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/index
 ---
+2012/12/21 14:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/show/ttile/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/show/ttile/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/%E7%BD%91%E5%8F%8B%E6%8A%95%E7%A5%A8%E9%80%89%E5%87%BA2012%E5%B9%B4%E5%9B%BD%E5%86%85%E5%B9%B4%E5%BA%A6%E6%B1%89%E5%AD%97%EF%BC%9A%E6%A2%A6
+---
+2012/12/21 14:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:24:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:25:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/tours/yii/learntrack/index.php/wiki/home".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(753): CWebApplication->runController('/tours/yii/lear...')
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(133): CController->forward('/tours/yii/lear...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): WikiController->actionIndex()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki')
+#13 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/home
+---
+2012/12/21 14:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php:189
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(62): WikiController->loadModelByTitle('list')
+#1 [internal function]: WikiController->actionShow('list')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WikiController), Array)
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WikiController), Object(ReflectionMethod), Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/show')
+#14 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/list
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php:189
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(62): WikiController->loadModelByTitle('list')
+#1 [internal function]: WikiController->actionShow('list')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WikiController), Array)
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WikiController), Object(ReflectionMethod), Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/show')
+#14 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/list
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php:189
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(62): WikiController->loadModelByTitle('list')
+#1 [internal function]: WikiController->actionShow('list')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WikiController), Array)
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WikiController), Object(ReflectionMethod), Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/show')
+#14 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/list
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php:189
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(62): WikiController->loadModelByTitle('??????1/8??????...')
+#1 [internal function]: WikiController->actionShow('??????1/8??????...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WikiController), Array)
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WikiController), Object(ReflectionMethod), Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/show')
+#14 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/%E6%AC%A7%E5%86%A01/8%E5%86%B3%E8%B5%9B:%E7%9A%87%E9%A9%AC%E9%81%87%E6%9B%BC%E8%81%94%20%E5%B7%B4%E8%90%A8%E7%A2%B0%E7%B1%B3%E5%85%B0%20%E6%8B%9C%E4%BB%81%E6%88%98%E6%9E%AA%E6%89%8B
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/home
+---
+2012/12/21 14:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "欧冠1/8决赛:皇马遇曼联 巴萨碰米兰 拜仁战枪手".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('??????1/8??????...')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/%E6%AC%A7%E5%86%A01/8%E5%86%B3%E8%B5%9B:%E7%9A%87%E9%A9%AC%E9%81%87%E6%9B%BC%E8%81%94%20%E5%B7%B4%E8%90%A8%E7%A2%B0%E7%B1%B3%E5%85%B0%20%E6%8B%9C%E4%BB%81%E6%88%98%E6%9E%AA%E6%89%8B
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php:189
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/WikiController.php(62): WikiController->loadModelByTitle('??????/??????:?...')
+#1 [internal function]: WikiController->actionShow('??????/??????:?...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WikiController), Array)
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WikiController), Object(ReflectionMethod), Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/show')
+#14 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/%E6%AC%A7%E5%86%A0/%E5%86%B3%E8%B5%9B%3A%E7%9A%87%E9%A9%AC%E9%81%87%E6%9B%BC%E8%81%94+%E5%B7%B4%E8%90%A8%E7%A2%B0%E7%B1%B3%E5%85%B0+%E6%8B%9C%E4%BB%81%E6%88%98%E6%9E%AA%E6%89%8B
+---
+2012/12/21 14:49:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/dengwei/var/www/tours/yii/framework/web/CController.php:1119
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/dengwei/var/www/tours/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/dengwei/var/www/tours/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki/delete/id/...')
+#10 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki/delete/id/7
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki/list
+---
+2012/12/21 14:53:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wiki formatter".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki formatter')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki%20formatter
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wiki formatter".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki formatter')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki%20formatter
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wiki formatter".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('wiki formatter')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/wiki%20formatter
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/21 14:53:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "皇马遇曼联 巴萨碰米兰 拜仁战枪手".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('???????????????...')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/%E7%9A%87%E9%A9%AC%E9%81%87%E6%9B%BC%E8%81%94%20%E5%B7%B4%E8%90%A8%E7%A2%B0%E7%B1%B3%E5%85%B0%20%E6%8B%9C%E4%BB%81%E6%88%98%E6%9E%AA%E6%89%8B
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---

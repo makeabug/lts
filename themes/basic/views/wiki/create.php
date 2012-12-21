@@ -5,7 +5,8 @@ $this->breadcrumbs = array(
 );
 $this->contentTitle = 'Create Page';
 $this->menu = array(
-	array('label'=>'List Pages', 'url'=>array('index'), 'itemOptions'=>array('class'=>'nobg')),
+    array('label'=>'Home', 'url'=>Yii::app()->createUrl('wiki/home'), 'itemOptions'=>array('class'=>'nobg')),
+	array('label'=>'All Pages', 'url'=>array('list')),
 );
 ?>
 

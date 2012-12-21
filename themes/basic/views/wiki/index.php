@@ -5,7 +5,7 @@ $this->breadcrumbs = array(
 
 $this->contentTitle = 'List wiki';
 $this->menu = array(
-	array('label'=>'Create wiki', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
+	array('label'=>'Create Page', 'url'=>array('create'), 'itemOptions'=>array('class'=>'nobg')),
 );
 ?>
 	

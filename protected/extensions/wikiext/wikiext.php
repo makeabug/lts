@@ -10,14 +10,7 @@
      */
      class Wikiext extends creole
      {
-         /**
-          *
-          * @param <type> $optins
-          */
-         public function init( $options = array() )
-         {
-             parent::init($options);
-         }
+         
      }
 ?>
 
