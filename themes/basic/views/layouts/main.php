@@ -31,6 +31,7 @@
 				        array('label' => 'Dashboard', 'url'=>array('/site/index')),
 				        //array('label' => 'Blog', 'url'=>array('/post')),
 				        array('label' => 'Wiki', 'url'=>array('/wiki')),
+						array('label' => 'Demo', 'url'=>array('/demo')),
 				        array('label' => 'Notebook', 'url'=>array('/notebook')),
 				    ),
 				));?>
