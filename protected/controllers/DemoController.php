@@ -6,6 +6,8 @@ class DemoController extends Controller
 	
 	public function actionIndex()
 	{
+	    $this->forward('douban');
+	    
 		$this->render('index');
 	}
 	
