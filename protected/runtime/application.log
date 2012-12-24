@@ -3922,3 +3922,83 @@ Stack trace:
 #14 {main}
 REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
 ---
+2012/12/24 15:08:40 [error] [exception.CException] exception 'CException' with message 'DemoController and its behaviors do not have a method or closure named "getContent".' in /home/dengwei/var/www/tours/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(19): CComponent->__call('getContent', Array)
+#1 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(19): DemoController->getContent(NULL)
+#2 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('douban')
+#7 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('demo/douban')
+#8 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+---
+2012/12/24 15:09:25 [error] [php] Missing argument 1 for Douban::getResult(), called in /home/dengwei/var/www/tours/yii/learntrack/protected/components/Douban.php on line 36 and defined (/home/dengwei/var/www/tours/yii/learntrack/protected/components/Douban.php:19)
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#1 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): DemoController->runAction()
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): DemoController->runActionWithFilters()
+#4 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): DemoController->run()
+#5 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CWebApplication->run()
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+in /home/dengwei/var/www/tours/yii/learntrack/protected/components/Douban.php (19)
+in /home/dengwei/var/www/tours/yii/learntrack/protected/components/Douban.php (36)
+in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php (19)
+2012/12/24 15:36:25 [error] [php] Invalid argument supplied for foreach() (/home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php:19)
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): DemoController->renderFile()
+#1 /home/dengwei/var/www/tours/yii/framework/web/CController.php(783): DemoController->renderPartial()
+#2 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(20): DemoController->render()
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): DemoController->runAction()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): DemoController->runActionWithFilters()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): DemoController->run()
+#8 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CWebApplication->run()
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+in /home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php (19)
+in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php (20)
+in /home/dengwei/var/www/tours/yii/learntrack/index.php (13)
+2012/12/24 16:03:44 [error] [php] Invalid argument supplied for foreach() (/home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php:13)
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): DemoController->renderFile()
+#1 /home/dengwei/var/www/tours/yii/framework/web/CController.php(783): DemoController->renderPartial()
+#2 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(21): DemoController->render()
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): DemoController->runAction()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): DemoController->runActionWithFilters()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): DemoController->run()
+#8 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CWebApplication->run()
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+in /home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php (13)
+in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php (21)
+in /home/dengwei/var/www/tours/yii/learntrack/index.php (13)
+2012/12/24 16:04:01 [error] [php] Invalid argument supplied for foreach() (/home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php:13)
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): DemoController->renderFile()
+#1 /home/dengwei/var/www/tours/yii/framework/web/CController.php(783): DemoController->renderPartial()
+#2 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(21): DemoController->render()
+#3 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): DemoController->runAction()
+#6 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): DemoController->runActionWithFilters()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): DemoController->run()
+#8 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CWebApplication->run()
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+in /home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php (13)
+in /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php (21)
+in /home/dengwei/var/www/tours/yii/learntrack/index.php (13)
