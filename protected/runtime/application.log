@@ -3894,3 +3894,31 @@ Stack trace:
 REQUEST_URI=/tours/yii/learntrack/index.php/%E7%9A%87%E9%A9%AC%E9%81%87%E6%9B%BC%E8%81%94%20%E5%B7%B4%E8%90%A8%E7%A2%B0%E7%B1%B3%E5%85%B0%20%E6%8B%9C%E4%BB%81%E6%88%98%E6%9E%AA%E6%89%8B
 HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
 ---
+2012/12/24 10:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notebook".' in /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('notebook')
+#1 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/notebook
+HTTP_REFERER=http://www.lc/tours/yii/learntrack/index.php/wiki
+---
+2012/12/24 11:20:33 [error] [exception.CException] exception 'CException' with message 'Property "DemoController.result" is not defined.' in /home/dengwei/var/www/tours/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/dengwei/var/www/tours/yii/learntrack/themes/basic/views/demo/douban.php(14): CComponent->__get('result')
+#1 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(127): require('/home/dengwei/v...')
+#2 /home/dengwei/var/www/tours/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/dengwei/v...', Array, true)
+#3 /home/dengwei/var/www/tours/yii/framework/web/CController.php(870): CBaseController->renderFile('/home/dengwei/v...', Array, true)
+#4 /home/dengwei/var/www/tours/yii/framework/web/CController.php(783): CController->renderPartial('douban', Array, true)
+#5 /home/dengwei/var/www/tours/yii/learntrack/protected/controllers/DemoController.php(20): CController->render('douban', Array)
+#6 /home/dengwei/var/www/tours/yii/framework/web/actions/CInlineAction.php(50): DemoController->actionDouban()
+#7 /home/dengwei/var/www/tours/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/dengwei/var/www/tours/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /home/dengwei/var/www/tours/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(283): CController->run('douban')
+#11 /home/dengwei/var/www/tours/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('demo/douban')
+#12 /home/dengwei/var/www/tours/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/dengwei/var/www/tours/yii/learntrack/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/tours/yii/learntrack/index.php/demo/douban
+---

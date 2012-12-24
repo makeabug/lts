@@ -6,3 +6,5 @@ $this->breadcrumbs=array(
 $this->contentTitle = 'Demo';
 
 ?>
+
+Hello, Demo!
