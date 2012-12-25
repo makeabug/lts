@@ -20,7 +20,7 @@ $this->contentTitle = 'Demo';
 </ul>
 
 <?php
-echo '<pre>';
+/* echo '<pre>';
 print_r($result);
-echo '</pre>';
+echo '</pre>'; */
 ?>

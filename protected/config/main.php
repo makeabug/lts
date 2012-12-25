@@ -25,7 +25,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'111111',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1', '192.168.41.*'),
+			'ipFilters'=>array('127.0.0.1','::1', '192.168.*.*'),
 		),
 		
 	),
@@ -46,6 +46,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',*/
 				'wiki/<title:(?!admin|create|delete|index|view|update|list).*>' => 'wiki/show',
 			),
+			'showScriptName'=>false,
 		),
 		
 		/*'db'=>array(

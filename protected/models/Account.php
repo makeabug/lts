@@ -1,22 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "tbl_posts".
+ * This is the model class for table "tbl_accounts".
  *
- * The followings are the available columns in table 'tbl_posts':
- * @property string $id
- * @property string $title
- * @property string $content
- * @property integer $author_id
- * @property string $created_at
- * @property string $updated_at
+ * The followings are the available columns in table 'tbl_accounts':
+ * @property integer $id
+ * @property string $username
+ * @property string $password
+ * @property integer $type
+ * @property string $create_time
+ * @property integer $create_user_id
+ * @property string $update_time
+ * @property integer $update_user_id
  */
-class Post extends LearnTrackActiveRecord
+class Account extends LearnTrackActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Post the static model class
+	 * @return Account the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -28,7 +30,7 @@ class Post extends LearnTrackActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_posts';
+		return 'tbl_accounts';
 	}
 
 	/**
@@ -39,12 +41,12 @@ class Post extends LearnTrackActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content', 'required'),
-			array('title', 'length', 'max'=>256),
-			//array('created_at, updated_at', 'safe'),
+			array('username, password, type', 'required'),
+			array('type', 'numerical', 'integerOnly'=>true),
+			array('username, password', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, content, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
+			array('id, username, password, type, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,11 +68,13 @@ class Post extends LearnTrackActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'author_id' => 'Author',
-			'created_at' => 'Created At',
-			'updated_at' => 'Updated At',
+			'username' => 'Username',
+			'password' => 'Password',
+			'type' => 'Type',
+			'create_time' => 'Create Time',
+			'create_user_id' => 'Create User',
+			'update_time' => 'Update Time',
+			'update_user_id' => 'Update User',
 		);
 	}
 
@@ -85,24 +89,17 @@ class Post extends LearnTrackActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('author_id',$this->author_id);
-		$criteria->compare('created_at',$this->created_at,true);
-		$criteria->compare('updated_at',$this->updated_at,true);
+		$criteria->compare('id',$this->id);
+		$criteria->compare('username',$this->username,true);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('type',$this->type);
+		$criteria->compare('create_time',$this->create_time,true);
+		$criteria->compare('create_user_id',$this->create_user_id);
+		$criteria->compare('update_time',$this->update_time,true);
+		$criteria->compare('update_user_id',$this->update_user_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}
-	
-	public function getUser()
-	{
-        $user = User::model()->findByPk($this->create_user_id);
-	    if (null === $user)
-	       throw new CException('User Can not found.');
-
-	    return $user;
 	}
 }

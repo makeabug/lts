@@ -66,7 +66,7 @@ class Wiki extends LearnTrackActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, content', 'required'),
-			array('title', 'length', 'max'=>255),
+			array('title', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, title, content, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
