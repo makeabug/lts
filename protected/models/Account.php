@@ -15,6 +15,9 @@
  */
 class Account extends LearnTrackActiveRecord
 {
+    const TYPE_DOUBAN = 0;
+    const TYPE_GOOGLE = 1;
+    
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -101,5 +104,19 @@ class Account extends LearnTrackActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	public function getTypeOptions()
+	{
+	    return array(
+	       self::TYPE_DOUBAN => 'Douban',
+	       self::TYPE_GOOGLE => 'Google',
+	    );
+	}
+	
+	public function getTypeText()
+	{
+	    $typeOptions = $this->typeOptions;
+	    return isset($typeOptions[$this->type]) ? $typeOptions[$this->type] : "unknown type ({$this->type})";
 	}
 }

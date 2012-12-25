@@ -51,4 +51,19 @@ class AccountTest extends CDbTestCase
 		$deleteAccount = Account::model()->findByPk($accountId);
 		$this->assertEquals(null, $deleteAccount);
 	}
+	
+	public function testGetTypes()
+	{
+	    $options = Account::model()->typeOptions;
+	    $this->assertTrue(is_array($options));
+	    
+	    $this->assertTrue(2 == count($options));
+	    $this->assertTrue(in_array('Douban', $options));
+	    $this->assertTrue(in_array('Google', $options));
+	}
+	
+	public function testGetTypeText()
+	{
+	    $this->assertTrue('Douban' == $this->accounts('account1')->getTypeText());
+	}
 }

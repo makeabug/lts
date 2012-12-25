@@ -13,13 +13,18 @@ class DemoController extends Controller
 	
 	public function actionDouban()
 	{
-	    $username = 'wikiidw';
-	    $douban = new Douban();
-	    $douban->setUsername($username);
-	    $douban->setParams(array('status'=>'wish'));
-	   
+	    $result = array();
+	    $doubanAccount = Account::model()->find('type=:type', array(':type'=>Account::TYPE_DOUBAN ));
+	    if ($doubanAccount)
+	    {
+	        $douban = new Douban();
+    	    $douban->setUsername($doubanAccount->username);
+    	    $douban->setParams(array('status'=>'wish'));
+    	    $result = $douban->getBookList();
+	    }
+	     
 	    $this->render('douban', array(
-	       'result' => $douban->getBookList(),
+	       'result' => $result,
 	    ));
 	    
 	}
