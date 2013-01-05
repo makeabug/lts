@@ -1,4 +1,7 @@
 <?php
+Yii::import('application.vendors.*');
+require_once 'Google/Google_Client.php';
+require_once 'Google/contrib/Google_DriveService.php';
 
 class DemoController extends Controller
 {
@@ -27,6 +30,15 @@ class DemoController extends Controller
 	       'result' => $result,
 	    ));
 	    
+	}
+	
+	public function actionGoogle()
+	{
+	    $result = null;
+	    
+	    $this->render('google', array(
+	       'result' => $result,
+	    ));
 	}
 	
 }
