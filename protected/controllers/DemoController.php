@@ -1,7 +1,7 @@
 <?php
-Yii::import('application.vendors.*');
-require_once 'Google/Google_Client.php';
-require_once 'Google/contrib/Google_DriveService.php';
+//Yii::import('application.vendors.*');
+//require_once 'Google/Google_Client.php';
+//require_once 'Google/contrib/Google_DriveService.php';
 
 class DemoController extends Controller
 {
