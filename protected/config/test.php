@@ -9,7 +9,7 @@ return CMap::mergeArray(
 			),
 			/* uncomment the following to provide test database connection*/
 			'db'=>array(
-				'connectionString'=>'mysql:host=localhost;dbname=learntrack_test',
+				'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/learntrack_test.db',
 			),
 		),
 	)

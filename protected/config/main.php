@@ -49,18 +49,18 @@ return array(
 			'showScriptName'=>false,
 		),
 		
-		/*'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),*/
+		'db'=>array(
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/learntrack.db',
+		),
 		// uncomment the following to use a MySQL database
 		
-		'db'=>array(
+		/* 'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=learntrack',
 			'emulatePrepare' => true,
 			'username' => 'username',
 			'password' => 'password',
 			'charset' => 'utf8',
-		),
+		), */
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
