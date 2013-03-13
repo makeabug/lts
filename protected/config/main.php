@@ -90,6 +90,6 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 	
-	'theme' => 'basic',
+	'theme' => 'bootstrap',//basic,bootstrap
 	//'homeUrl'=> Yii::app()->request->baseUrl,
 );

@@ -21,6 +21,8 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 	
+	public $actived;
+	
 	public $contentTitle = '';
 	
 	public function beforeAction($action)
